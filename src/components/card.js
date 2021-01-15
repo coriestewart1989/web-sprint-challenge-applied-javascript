@@ -34,7 +34,7 @@ imgAuthor.src = obj.authorPhoto;
 span.textContent = obj.authorName;
 divHeadline.textContent = obj.headline;
 
-divImg.appendChild(span);
+divAuthor.appendChild(span);
 divImg.appendChild(imgAuthor);
 divAuthor.appendChild(divImg);
 divCard.appendChild(divHeadline);
