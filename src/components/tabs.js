@@ -15,17 +15,18 @@ const Tabs = (topics) => {
   // </div>
   //
   const div = document.createElement('div');
-  const div2 = document.createElement('div');
-  
+  const div2 = document.createElement('div2');
+ 
   div.classList.add('topics');
   div2.classList.add('tab')
-
+  
 
   div2.textContent = (topics);
-
+ 
   
   div.appendChild(div2);
-
+ 
+  
   return div
   
 }
@@ -56,33 +57,6 @@ axios
     console.log(err);
 })
     }
-// const Tabs = (topics) => {
-//   const topic = document.createElement("div");
-//   const tab = document.createElement("div");
- 
-//   topic.classList.add("topics");
-//   tab.classList.add("tab");
-
-//   tab.textContent = (topics);
-
-//   topic.appendChild(tab);
-
-//   return tab;
-// };
-// const tabsAppender = (selector) => {
-//   const tabsContainer = document.querySelector(selector);
-//   axios
-//     .get("https://lambda-times-api.herokuapp.com/topics")
-//     .then((res) => {
-//       const topics = res.data.topics;
-//       topics.forEach((topic) => {
-//         tabsContainer.append(Tabs(topic));
-//       });
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// };
 
 export { Tabs, tabsAppender }
 
